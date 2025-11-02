@@ -1,0 +1,116 @@
+/* body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+section {
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+a { color: #0066cc; text-decoration: none; }
+a:hover { text-decoration: underline; } */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header Section */
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centers horizontally */
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.header-text p {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+ .social-links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #333;
+  font-size: 1.8rem;
+  margin: 0 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+  color: #0066cc;
+  transform: scale(1.1);
+}
+
+
+.social-links a i.fa-envelope { color: #d44638; }     /* Gmail red */
+.social-links a i.fa-github { color: #000000; }       /* GitHub black */
+.social-links a i.fa-linkedin { color: #0077b5; }     /* LinkedIn blue */
+.social-links a i.fa-x-twitter { color: #000000; }    /* X (Twitter) black */
+.social-links a i.fa-youtube { color: #ff0000; }      /* YouTube red */
+.social-links a i.fa-whatsapp { color: #25D366; } /* WhatsApp green */
+
+
+.social-links a:hover i {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
