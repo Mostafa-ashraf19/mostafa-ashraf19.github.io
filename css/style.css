@@ -1,65 +1,200 @@
+/* -------------------------
+   Base / Theme (keeps your provided style)
+   ------------------------- */
+:root{
+  --bg: #f4f4f9;
+  --card: #ffffff;
+  --muted: #666;
+  --accent: #0066cc;
+  --header-bg: #222;
+  --header-color: #fff;
+  --maxw: 1100px;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background-color: var(--bg);
   color: #333;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
-/* Header Section */
+/* Header */
 header {
-  background: #222;
-  color: #fff;
-  padding: 20px 0;
+  background: var(--header-bg);
+  color: var(--header-color);
+  padding: 22px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .header-container {
+  max-width: var(--maxw);
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center; /* centers horizontally */
-  gap: 20px;
+  gap: 18px;
+  padding: 4px;
 }
 
 .profile-pic {
-  width: 90px;
-  height: 90px;
+  width: 92px;
+  height: 92px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #fff;
+  flex-shrink: 0;
 }
 
 .header-text h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2px;
 }
 
-.header-text p {
-  margin-top: 5px;
-  font-size: 1rem;
-  color: #ddd;
+.subtitle {
+  margin: 6px 0 0 0;
+  color: #dcdcdc;
+  font-size: 0.98rem;
 }
 
-/* Sections */
-section {
+.contact-line {
+  margin: 8px 0 0 0;
+  color: #cfcfcf;
+  font-size: 0.92rem;
+}
+
+.contact-line a { color: #cfcfcf; text-decoration: none; }
+.contact-line a:hover { text-decoration: underline; color: #fff; }
+
+/* Social row below header text (compact) */
+.social-row {
+  margin-top: 10px;
+}
+.social-row a {
+  color: #fff;
+  margin-right: 12px;
+  font-size: 1.1rem;
+  transition: transform .18s ease, opacity .18s ease;
+}
+.social-row a:hover { transform: translateY(-3px); opacity: 0.9; }
+
+/* Main layout */
+main {
+  max-width: var(--maxw);
+  margin: 22px auto;
+  padding: 0 16px 64px;
+}
+
+/* Cards (sections) */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(22,22,22,0.04);
   padding: 20px;
-  margin: 10px auto;
-  max-width: 800px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin-bottom: 18px;
+}
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+  color: #222;
 }
 
-a {
-  color: #0066cc;
-  text-decoration: none;
+/* Links */
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Projects list */
+.projects-list { margin: 0; padding-left: 18px; }
+.projects-list li { margin-bottom: 12px; }
+
+/* Two column section */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 18px;
 }
-a:hover {
-  text-decoration: underline;
+.two-column .col h4 { margin-bottom: 6px; }
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 8px;
+}
+.skill-block { background: #fbfbff; padding: 12px; border-radius: 8px; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.02); }
+
+/* Links list style */
+.links-list { margin: 6px 0 0 0; padding-left: 18px; }
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 18px 12px;
+  color: #666;
+  font-size: 0.95rem;
 }
 
+/* -------------------------
+   Timeline styles (pure CSS)
+   ------------------------- */
+.timeline {
+  position: relative;
+  margin: 16px 0;
+  padding-left: 20px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(180deg,#e0e0e0,#f0f0f0);
+  border-radius: 2px;
+}
 
- .social-links {
+.timeline-item {
+  position: relative;
+  padding: 10px 14px 18px 38px;
+  margin-bottom: 18px;
+}
+.timeline-item .time {
+  position: absolute;
+  /* left: -160px; */
+  right: 100px;
+  width: 140px;
+  text-align: right;
+  font-size: 0.9rem;
+  color: var(--muted);
+  top: 12px;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 18px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--card);
+  border: 3px solid var(--accent);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.timeline-item h3 { margin: 0 0 6px 0; font-size: 1rem; }
+.timeline-item p { margin: 0; color: #444; font-size: 0.95rem; }
+
+/* -------------------------
+   Social icons section (Contact area)
+   (kept from your CSS)
+   ------------------------- */
+.social-links {
   text-align: center;
   margin-top: 10px;
 }
@@ -72,20 +207,50 @@ a:hover {
 }
 
 .social-links a:hover {
-  color: #0066cc;
+  color: var(--accent);
   transform: scale(1.1);
 }
 
-
+/* brand colors */
 .social-links a i.fa-envelope { color: #d44638; }     /* Gmail red */
 .social-links a i.fa-github { color: #000000; }       /* GitHub black */
 .social-links a i.fa-linkedin { color: #0077b5; }     /* LinkedIn blue */
 .social-links a i.fa-x-twitter { color: #000000; }    /* X (Twitter) black */
 .social-links a i.fa-youtube { color: #ff0000; }      /* YouTube red */
-.social-links a i.fa-whatsapp { color: #25D366; } /* WhatsApp green */
-
+.social-links a i.fa-whatsapp { color: #25D366; }     /* WhatsApp green */
 
 .social-links a:hover i {
   transform: scale(1.2);
   opacity: 0.8;
+}
+
+/* -------------------------
+   Responsive adjustments
+   ------------------------- */
+@media (max-width: 900px) {
+  .two-column { grid-template-columns: 1fr; }
+  .timeline-item .time { left: -140px; width: 120px; font-size: 0.82rem; }
+}
+
+@media (max-width: 760px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .header-text { align-items: center; }
+  .header-text h1 { font-size: 1.4rem; }
+  .contact-line { font-size: 0.9rem; }
+  .timeline::before { left: 8px; }
+  .timeline-item { padding-left: 30px; }
+  .timeline-item .time { display: none; }
+  .social-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; }
+  .social-row a { font-size: 1.2rem; margin-right: 8px; color: #fff; }
+}
+
+/* Very small screens */
+@media (max-width: 420px) {
+  .profile-pic { width: 84px; height: 84px; }
+  .social-links a { font-size: 1.6rem; margin: 0 6px; }
 }

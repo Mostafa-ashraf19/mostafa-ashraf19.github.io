@@ -1,113 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Mostafa Ashraf | Portfolio</title> -->
-    <title>Mostafa's Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mostafa Ashraf — Portfolio</title>
 
+  <link rel="icon" type="image/x-icon" href="./images/myphoto.ico">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <link rel="icon" type="image/x-icon" href="./images/myphoto.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="./css/font-awesome-all_min.css"> -->
-
-    <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-    <header>
-        <div class="header-container">
-            <img src="./images/myphoto.jpg" alt="Mostafa Ashraf" class="profile-pic">
-            <div class="header-text">
-                <h1>Mostafa Ashraf</h1>
-                <p>Software Engineer | Cloud & 5G Core Developer</p>
-                <p>(+2) 01112232652</p>
-            </div>
+  <header>
+    <div class="header-container">
+      <img src="./images/myphoto.jpg" alt="Mostafa Ashraf" class="profile-pic">
+      <div class="header-text">
+        <h1>Mostafa Ashraf</h1>
+        <p class="subtitle">Software Engineer | Cloud & 5G Core Developer</p>
+        <p class="contact-line">(+2) 01112232652 • <a href="mailto:mostaphaashraf1996@gmail.com">mostaphaashraf1996@gmail.com</a></p>
+
+        <div class="social-row">
+          <a href="mailto:mostaphaashraf1996@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/Mostafa-ashraf19" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/mostafa-ashraf1709" target="_blank" title="GitHub (other)"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mostafa-ashraf-a62807142" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.youtube.com/@mostafaashraf885" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/201112232652" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <span> &emsp;&emsp;</span>
+          <a href="https://drive.google.com/file/d/1T_xfKb70q9qlDc3siV2bII0XaHtjeXIS" target="_blank" title="CV"><i class="fa-regular fa-file"></i></a>
+
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="social-links">
-
-            <a href="mailto:mostaphaashraf1996@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-
-            <a href="https://github.com/Mostafa-ashraf19" target="_blank" title="GitHub"><i
-                    class="fa-brands fa-github"></i></a>
-
-            <a href="https://github.com/mostafa-ashraf1709" target="_blank" title="GitHub"><i
-                    class="fa-brands fa-github"></i></a>
-
-            <a href="https://www.linkedin.com/in/mostafa-ashraf-a62807142" target="_blank" title="LinkedIn"><i
-                    class="fa-brands fa-linkedin"></i></a>
-
-            <a href="https://www.youtube.com/@mostafaashraf885" target="_blank" title="YouTube"><i
-                    class="fa-brands fa-youtube"></i></a>
-
-            <a href="https://wa.me/201112232652" target="_blank" title="WhatsApp"><i
-                    class="fa-brands fa-whatsapp"></i></a>
-
-            <!-- <a href="https://wa.me/201234567890?text=Hi%20Mostafa%2C%20I%20saw%20your%20portfolio!" target="_blank" title="WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a> -->
-
-
-            <!-- <a href="https://twitter.com/yourprofile" target="_blank" title="Twitter"><i
-                    class="fa-brands fa-x-twitter"></i></a> -->
-        </div>
+  <main>
+    <!-- About -->
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>
+        I’m Mostafa Ashraf — a passionate software engineer from Cairo working on modern C++ systems, cloud-native services,
+        and 5G/Open RAN platforms. I hold a B.E. in Computer & Systems Engineering and I’m currently pursuing an M.Sc. (Ain Shams).
+        I contributed to multiple open-source projects (GSoC contributor & mentor) and I work on telecom cloud-native modules like CHF and RIC testing platforms.
+      </p>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I’m passionate about building 5G core network solutions, cloud-native architectures, and modern software
-            systems.</p>
-        <p>
-            Mostafa Ashraf was born in Cairo, Egypt. He received his B.S. degree in Computer and Systems Engineering
-            from the Faculty of Engineering, Ain Shams University, Cairo, Egypt, in 2021.
-            He conducted his bachelor's graduation project working in the neuroscience field using a brain-computer
-            interface (BCI) and applied this concept to the Steady-state visually evoked potential (SSVEP) area, in a
-            wheelchair. The wheelchair had various movement methods like manual and autonomous modes, various machine
-            learning algorithms, such as artificial neural networks, and support vector machines. The gradation project
-            uses many technologies, including Brain Signals Extraction using EEG, Time Series Signal Processing, Machine
-            Learning, Computer Vision, Deep Learning, Embedded Systems, Autonomous Navigation, and Motion Planning. The
-            graduation project was sponsored by Valeo and IHUb, and it was qualified as one of the top five projects in
-            the Middle East, Africa, Russia, and Turkey, in Dell's Envision the Future competition.
-        </p>
-        <p>
-            Mostafa joined Google Summer of Code (GSoC21) and provided support to Spirv-fuzz, which is used to explore
-            vulnerabilities in graphics drivers on Android and PC devices through various input transformations, and
-            metamorphic testing principles. He has strong technical skills in Software Engineering (but not limited to):
-            Design patterns, Data Structures, Algorithms, Object-oriented design, Problem-solving, and Multithreading.
-        </p>
-        <p>
-            He joined GSoC22, reorganized the CGAL an open-source computational geometry algorithms library to follow
-            the Model–view–presenter (MVP) design pattern used Qt to add features that can work during run time, used
-            template metaprogramming to handle its data structures, added more features, fixed bugs, and allowed using
-            OpenGL.
-        </p>
-        <p>
-            He joined GSoC’23 as a mentor in Jenkins responsible for code review and documentation.
-        </p>
-        <p>
-            Currently, he's a Software Engineer at Orange Innovation Egypt.
-        </p>
+    <!-- Experience Timeline -->
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="time">Jun 2025 – Present</div>
+          <div class="content">
+            <h3>Instructor — National Telecommunication Institute (NTI)</h3>
+            <p>Teaching Applied Data Science, DevOps and Cloud Development tracks; building course materials and workshops.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time">Apr 2022 – Present</div>
+          <div class="content">
+            <h3>Software Engineer — Orange Innovation Egypt</h3>
+            <p>
+              C++ software engineer with modern C++ (11/14/17), Qt, Docker, CI/CD. Worked on LoRa mesh protocol, ns-O-RAN-FlexRIC integration,
+              E2AP & KPM-RC implementation, and energy saving xApps. Presented at OAI 10th Anniversary Workshop.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time">Feb 2022 – Oct 2025</div>
+          <div class="content">
+            <h3>Teaching Assistant — Faculty of Engineering, Ain Shams University (ASU)</h3>
+            <p>Courses: Distributed Computing, Data Structures & Algorithms, High-Performance Computing, Advanced Programming.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time">Nov 2022 – Nov 2023</div>
+          <div class="content">
+            <h3>Software Developer — Egyptian Armed Forces (Military Service)</h3>
+            <p>Full-stack dev: ReactJS + NodeJS, MsSQL/SQLite, REST & WebSockets, embedded device integration, local network setup for lab.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time">Feb 2023 – Aug 2023</div>
+          <div class="content">
+            <h3>Mentor — Google Summer of Code (Jenkins)</h3>
+            <p>Guided contributors on code reviews, documentation and integrating projects into Jenkins (plugin health score probes).</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time">May 2022 – Oct 2022</div>
+          <div class="content">
+            <h3>Open Source Contributor — CGAL (GSoC)</h3>
+            <p>Reorganized codebase to MVP pattern, added Qt features, template metaprogramming, OpenGL support and bug fixes.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time">Mar 2021 – Aug 2021</div>
+          <div class="content">
+            <h3>Machine Learning Intern — Amazon Web Services (AWS)</h3>
+            <p>AWS training and ML engineering tasks as part of MCIT program.</p>
+          </div>
+        </div>
+
+        <!-- Earlier / other roles -->
+        <div class="timeline-item">
+          <div class="time">Mar 2022 – Jul 2022</div>
+          <div class="content">
+            <h3>Sprints — AWS re/Start Trainee</h3>
+            <p>AWS re/Start BootCamp (cloud fundamentals & job readiness).</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="time">2021 – 2022 (various)</div>
+          <div class="content">
+            <h3>Multiple Roles & Contributions</h3>
+            <p>COM-IoT (Kalman filter), Resala (C++ instructor), Udacity Student Ambassador, GirlScript contributor, freelancing pilot program.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+    <!-- Projects -->
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul class="projects-list">
+        <li>
+          <h4>BrainWheel (Graduation Project)</h4>
+          <p>EEG-based brain-controlled smart wheelchair — autonomous & manual modes, ML for control and safety features.</p>
+        </li>
+        <li>
+          <h4>RIC Testing Platform (ns-O-RAN-FlexRIC)</h4>
+          <p>Open-source simulator and RIC testing integration (E2AP, KPM v3). Link: <a href="https://github.com/Orange-OpenSource/ns-O-RAN-flexric" target="_blank">ns-O-RAN-flexric</a></p>
+        </li>
+        <li>
+          <h4>OAI Charging Function (CHF)</h4>
+          <p>Custom C++ CHF integrated with NRF & SMF for traffic calculation and quota management (OpenAirInterface core).</p>
+        </li>
+        <li>
+          <h4>TourchPIP</h4>
+          <p>Deep-learning Python package implementing layers, activations, training loop (pip package available).</p>
+        </li>
+        <li>
+          <h4>CNN Dog Breed Classifier, Plagiarism Detector, Sentiment Web App</h4>
+          <p>Flask apps deployed on AWS, demoing ML pipelines and web integration.</p>
+        </li>
+        <li>
+          <h4>Search Engine (C++ / Qt)</h4>
+          <p>Search across 100k+ files using trie, PostgreSQL and C++/Qt UI.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <!-- <section id="education" class="card two-column"> -->
+    <section id="education" class="card two-column">
+
+      <h2>Education</h2>
+      <div class="col">
+        <h4>Master of Science (M.Sc.) — Ain Shams University</h4>
+        <p>Electrical Engineering (Computer & Systems Engineering) — 2024–2026</p>
+
+        <h4>Bachelor of Engineering — Ain Shams University</h4>
+        <p>Computer & Systems Engineering — Graduated 2021 (Graduation Project: BrainWheel — Excellent)</p>
+      </div>
+
+      <div class="col">
+        <h4>Selected Courses & Training</h4>
         <ul>
-            <li><b>RIC Testing Platform</b> — Open-source simulator for O-RAN RIC testing. [<a
-                    href="https://github.com/Orange-OpenSource/ns-O-RAN-flexric" target="_blank">GitHub</a>]</li>
-            <li><b>OAI Charging Function (CHF)</b> — Custom C++ CHF integrated with NRF and SMF.</li>
+          <li>Cloud DevOps Nanodegree — Udacity</li>
+          <li>React Developer Nanodegree — Udacity</li>
+          <li>Complete Modern C++ (11/14/17)</li>
+          <li>AWS re/Start & AWS Certified Cloud Practitioner (CLF-C02)</li>
         </ul>
+      </div>
     </section>
 
+    <!-- Skills -->
+    <section id="skills" class="card">
+      <h2>Skills</h2>
 
+      <div class="skills-grid">
+        <div class="skill-block">
+          <h5>Languages & Systems</h5>
+          <p>C, C++11/14/17, Python, JavaScript, Java basics, Verilog, VHDL</p>
+        </div>
 
+        <div class="skill-block">
+          <h5>Frameworks & Tools</h5>
+          <p>Qt, React, Docker, Kubernetes, CMake, GDB, Valgrind, ASAN, TSAN</p>
+        </div>
 
+        <div class="skill-block">
+          <h5>Cloud & ML</h5>
+          <p>AWS (SageMaker), Docker, CI/CD, ML pipelines, SageMaker experience</p>
+        </div>
 
+        <div class="skill-block">
+          <h5>Networking & Telecom</h5>
+          <p>OpenAirInterface, RIC/FlexRIC, E2AP/KPM, LoRa, 5G core concepts</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- Certifications & Awards -->
+    <section id="certs" class="card">
+      <h2>Certifications & Awards</h2>
+      <ul>
+        <li>AWS Certified Cloud Practitioner <b>(CLF-C02)</b> — Aug 2024</li>
+        <li>Google Summer of Code — Contributor (2021, 2022); Mentor (2023)</li>
+        <li><b>Top 5</b> — Dell Envision the Future competition (Graduation Project)</li>
+        <li>Various nanodegrees & specialized certification (Udacity)</li>
+      </ul>
+    </section>
+
+    <!-- Footer / Links -->
+    <section id="links" class="card">
+      <h2>Links</h2>
+      <ul class="links-list">
+        <li><a href="https://drive.google.com/file/d/1T_xfKb70q9qlDc3siV2bII0XaHtjeXIS" target="_blank">CV</a></li>
+        <li><a href="https://github.com/Mostafa-ashraf19" target="_blank">GitHub (Mostafa-ashraf19)</a></li>
+        <li><a href="https://github.com/mostafa-ashraf1709" target="_blank">GitHub (mostafa-ashraf1709)</a></li>
+        <li><a href="https://www.linkedin.com/in/mostafa-ashraf-a62807142" target="_blank">LinkedIn</a></li>
+        <li><a href="https://mostafa-ashraf19.github.io/" target="_blank">Live Portfolio</a></li>
+        <li><a href="https://www.youtube.com/@mostafaashraf885" target="_blank">YouTube playlist</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Mostafa Ashraf — Built with HTML & CSS • Hosted on GitHub Pages</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>
